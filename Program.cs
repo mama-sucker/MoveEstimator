@@ -1,4 +1,4 @@
-﻿// Module 2 = Excersise 2.2 
+// Module 2 = Excersise 2.2 
 // Addison Roy 
 // Move Estimator
 using System;
@@ -18,7 +18,7 @@ class Program
         Console.Write("Enter the number of miles traveled in the move: ");
         string milesInput = Console.ReadLine();
 
-        if (int.TryParse(hoursInput, out int hours) && int.TryParse(milesInput, out int miles))
+        if (double.TryParse(hoursInput, out double hours) && double.TryParse(milesInput, out double miles))
         {
             double totalCost = BaseRate + (hours * PerHourRate) + (miles * PerMileRate);
 
@@ -30,4 +30,3 @@ class Program
         }
     }
 }
-
